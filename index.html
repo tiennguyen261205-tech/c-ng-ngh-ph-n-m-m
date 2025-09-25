@@ -1,98 +1,116 @@
-﻿# c-ng-ngh-ph-n-m-m
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Thông tin cá nhân</title>
-  <style>
-    body {
-      background-color: pink;   
-      color: white;             
-      font-family: 'Times New Roman', Times, serif;
-      display: flex;
-      justify-content: center;  
-      align-items: center;      
-      height: 100vh;            
-      margin: 0;
-      overflow: hidden; /* ẩn phần ra ngoài */
-      position: relative;
-    }
-    .card {
-      text-align: center;     
-      background: rgba(255, 255, 255, 0.2);  
-      padding: 30px 50px;
-      border-radius: 15px;
-      z-index: 10;
-    }
-    h2 {
-      margin-bottom: 20px;
-      font-size: 32px;         
-      font-weight: bold;       
-    }
-    ul {
-      list-style: none;         
-      padding: 0;
-    }
-    li {
-      margin: 12px 0;
-      font-size: 22px;         
-      font-weight: bold;       
-    }
-    .heart {
-      color: red;   
-      font-size: 26px;
-      margin-left: 10px;
-    }
-    /* thú cưng */
-    .pet {
-      position: absolute;
-      width: 60px;
-      height: auto;
-      animation: move 15s linear infinite;
-    }
-    @keyframes move {
-      0%   { transform: translate(0,0); }
-      25%  { transform: translate(100vw, 20vh); }
-      50%  { transform: translate(50vw, 80vh); }
-      75%  { transform: translate(10vw, 50vh); }
-      100% { transform: translate(0,0); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân - Nguyễn Thị Cẩm Tiên</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #e8f5e9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            margin: 40px 0 20px 0;
+            color: #777;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Nguyễn Thị Cẩm Tiên</h1>
+        <p>Web Developer / Student / Personal Portfolio</p>
+    </header>
 
-  <div class="card">
-    <h2>THÔNG TIN CÁ NHÂN</h2>
-    <ul>
-      <li>Họ và tên: Nguyễn Thị Cẩm Tiên
-        <span class="heart">♥</span>
-      </li>
-      <li>Sinh ngày: 26/12/2005</li>
-      <li>Nơi sinh: Bình Phước</li>
-    </ul>
-  </div>
+    <div class="container">
+        <img src="avatar.jpg" alt="Ảnh cá nhân" class="profile-img">
 
-  <!-- JS tạo chó mèo ngẫu nhiên -->
-  <script>
-    const pets = [
-      "https://cdn-icons-png.flaticon.com/512/616/616408.png", // mèo
-      "https://cdn-icons-png.flaticon.com/512/616/616408.png", // mèo
-      "https://cdn-icons-png.flaticon.com/512/616/616430.png", // chó
-      "https://cdn-icons-png.flaticon.com/512/616/616408.png", // mèo
-      "https://cdn-icons-png.flaticon.com/512/616/616430.png"  // chó
-    ];
+        <section class="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào! Tôi là Nguyễn Thị Cẩm Tiên, sinh ngày 26/12/2005. Tôi là sinh viên yêu thích lập trình web và phát triển phần mềm. Tôi có niềm đam mê với HTML, CSS, JavaScript, và muốn tạo ra các website chuyên nghiệp, trực quan và dễ sử dụng.</p>
+        </section>
 
-    for (let i = 0; i < 8; i++) {
-      let img = document.createElement("img");
-      img.src = pets[Math.floor(Math.random() * pets.length)];
-      img.className = "pet";
-      img.style.top = Math.random() * window.innerHeight + "px";
-      img.style.left = Math.random() * window.innerWidth + "px";
-      img.style.animationDuration = (10 + Math.random() * 10) + "s"; // tốc độ khác nhau
-      document.body.appendChild(img);
-    }
-  </script>
+        <section class="contact">
+            <h2>Thông tin liên hệ</h2>
+            <p>Email: <a href="mailto:tiennguyen261205@gmail.com">tiennguyen261205@gmail.com</a></p>
+            <p>Số điện thoại: 0123 456 789</p>
+            <p>GitHub: <a href="https://github.com/tiennguyen261205-tech" target="_blank">tiennguyen261205-tech</a></p>
+        </section>
 
+        <section class="skills">
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript cơ bản</li>
+                <li>Responsive Web Design</li>
+                <li>Git & GitHub</li>
+                <li>WinForms C# (Quản lý nhân sự, quản lý bàn ăn)</li>
+                <li>Teamwork và quản lý dự án nhỏ</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Học vấn</h2>
+            <ul>
+                <li>THPT Nguyễn Khuyến (Khóa 2020–2023)</li>
+                <li>Đang học các khóa lập trình web cơ bản và nâng cao</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Nguyễn Thị Cẩm Tiên | Designed by Me
+    </footer>
 </body>
 </html>
-
