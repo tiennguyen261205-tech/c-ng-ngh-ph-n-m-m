@@ -1,116 +1,112 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin cá nhân - Nguyễn Thị Cẩm Tiên</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .profile-img {
-            display: block;
-            margin: 0 auto 20px auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #4CAF50;
-        }
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            background-color: #e8f5e9;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 4px;
-        }
-        .contact p {
-            margin: 5px 0;
-        }
-        footer {
-            text-align: center;
-            margin: 40px 0 20px 0;
-            color: #777;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Thông tin cá nhân - Nguyễn Thị Cẩm Tiên</title>
+  <style>
+    body {
+      background-color: #ffd6eb; /* Hồng pastel */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(45deg, #ff99cc, #ffccff);
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 5px solid #ff66b2;
+      position: relative;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #ff3399;
+      border-bottom: 2px dashed #ff99cc;
+      padding-bottom: 5px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .highlight {
+      color: #ff3399;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #ff99cc;
+      color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    footer img {
+      width: 120px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Nguyễn Thị Cẩm Tiên</h1>
-        <p>Web Developer / Student / Personal Portfolio</p>
-    </header>
 
-    <div class="container">
-        <img src="avatar.jpg" alt="Ảnh cá nhân" class="profile-img">
+  <header>
+    🌸 Giới thiệu về bản thân 🌸
+    <!-- Mèo động dễ thương -->
+    <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="Mèo nhảy múa dễ thương">
+  </header>
 
-        <section class="about">
-            <h2>Giới thiệu bản thân</h2>
-            <p>Xin chào! Tôi là Nguyễn Thị Cẩm Tiên, sinh ngày 26/12/2005. Tôi là sinh viên yêu thích lập trình web và phát triển phần mềm. Tôi có niềm đam mê với HTML, CSS, JavaScript, và muốn tạo ra các website chuyên nghiệp, trực quan và dễ sử dụng.</p>
-        </section>
+  <div class="container">
+    <h2>Thông tin cá nhân</h2>
+    <p><span class="highlight">Họ và tên:</span> Nguyễn Thị Cẩm Tiên</p>
+    <p><span class="highlight">Ngày sinh:</span> 26/12/2005</p>
+    <p><span class="highlight">Nơi sinh:</span> Bình Phước</p>
+    <p><span class="highlight">Quê quán:</span> Hà Nội</p>
 
-        <section class="contact">
-            <h2>Thông tin liên hệ</h2>
-            <p>Email: <a href="mailto:tiennguyen261205@gmail.com">tiennguyen261205@gmail.com</a></p>
-            <p>Số điện thoại: 0123 456 789</p>
-            <p>GitHub: <a href="https://github.com/tiennguyen261205-tech" target="_blank">tiennguyen261205-tech</a></p>
-        </section>
+    <h2>Học tập</h2>
+    <p><span class="highlight">THPT:</span> Trường THPT Nguyễn Khuyến (Khóa 2020 – 2023), lớp 12A2</p>
+    <p><span class="highlight">Đại học:</span> Trường Đại học Sư phạm (2023 – nay), sinh viên năm 3 chuyên ngành Sư phạm Tin học</p>
 
-        <section class="skills">
-            <h2>Kỹ năng</h2>
-            <ul>
-                <li>HTML5, CSS3, JavaScript cơ bản</li>
-                <li>Responsive Web Design</li>
-                <li>Git & GitHub</li>
-                <li>WinForms C# (Quản lý nhân sự, quản lý bàn ăn)</li>
-                <li>Teamwork và quản lý dự án nhỏ</li>
-            </ul>
-        </section>
+    <h2>Sở thích</h2>
+    <p>✨ Đọc sách, nghe nhạc và múa hát.</p>
+    <p>🐱 Thích các bé chó và mèo .</p>
 
-        <section class="education">
-            <h2>Học vấn</h2>
-            <ul>
-                <li>THPT Nguyễn Khuyến (Khóa 2020–2023)</li>
-                <li>Đang học các khóa lập trình web cơ bản và nâng cao</li>
-            </ul>
-        </section>
-    </div>
+    <h2>Ước mơ</h2>
+    <p>🌟 Trở thành một <span class="highlight">một cô giáo </span> giỏi, đồng thời muốn bản thân có thể cống hiến mình cho ngành giáo dục và giúp đỡ được những hoàn cảnh khó khăn ở trong xã hội.</p>
+  </div>
 
-    <footer>
-        &copy; 2025 Nguyễn Thị Cẩm Tiên | Designed by Me
-    </footer>
+  <footer>
+    💖 Cảm ơn bạn đã đọc thông tin về mình 💖
+    <br>
+    <!-- Mèo động dễ thương ở footer -->
+    <img src="https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif" alt="Mèo nằm dễ thương">
+  </footer>
+
 </body>
 </html>
