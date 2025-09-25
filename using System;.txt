@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		// Khai báo biến ten kiểu string (xâu ký tự)
+		string ten;
+		
+		// In ra lời hướng dẫn người dùng nhập
+		Console.Write("Nhập tên: ");
+		// Đọc 1 giá trị người dùng nhập, gán vào biến ten
+		ten = Console.ReadLine();
+		
+		// In ra màn hình lời chào (có kèm tên)
+		Console.WriteLine("Hello " + ten);
+		
+		int nam_sinh;
+		Console.Write("Nhập năm sinh: ");
+		// Chuyển giá trị nhập vào từ kiểu string sang kiểu int rồi gán cho biến tuoi
+		nam_sinh = Convert.ToInt32(Console.ReadLine());
+		
+		int tuoi = 2025 - nam_sinh;
+		
+		Console.WriteLine("Bạn " + tuoi + " tuổi");
+	}
+}
